@@ -32,7 +32,7 @@ class ApiAuthMiddleware
                 'message'   => 'El usuario no está identificado.'
             );
 
-            return response()->json($data, $data['error']);
+            return response()->json($data, $data['code']);
         }
     }
 }
